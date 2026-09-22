@@ -1,4 +1,4 @@
-# 🌌 Alya Pratama — Personal Portfolio & Admin Portal CMS
+# 🌌 RIZAL SARAGIH
 ## Arsitektur Deployment: PHP Native API + MySQL (Shared Hosting / VPS)
 
 Proyek ini menggunakan **Vite + React (TypeScript)** untuk antarmuka pengguna (Frontend SPA), didukung oleh **PHP Native API + MySQL/MariaDB** di sisi server (Backend). Arsitektur ini dirancang khusus agar kompatibel dengan shared hosting atau VPS tradisional Anda (cPanel/DirectAdmin).
