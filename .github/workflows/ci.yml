@@ -29,10 +29,13 @@ jobs:
         with:
           node-version: 24
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Clean npm cache
+        run: npm cache clean --force
 
-      - name: Build Project
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Build Portfolio
         run: npm run build
 
       - name: Setup GitHub Pages
@@ -44,7 +47,7 @@ jobs:
           path: ./dist
 
   deploy:
-    name: Deploy
+    name: Deploy Portfolio
     needs: build
     runs-on: ubuntu-latest
 
